@@ -58,3 +58,15 @@ Created Organizational Unit (OU) Structure and Initial User in Active Directory:
 ![Image 3-17-26 at 6 35 PM](https://github.com/user-attachments/assets/9f30f4ff-c2a4-42d3-b35f-86c8af9b385b)
 
 
+Created Security Groups and Assigned Users:
+- Used ADUC to create security groups for "IT Workers" and "HR Workers" within the domain. As well as, assigned users to their respective groups to simulate role-based access control.
+
+![Image 3-18-26 at 6 44 AM](https://github.com/user-attachments/assets/92bfe6fe-2c5d-4ecb-9948-cbcabeb12c0f)
+
+Simulated Password Reset:
+- Performed a password reset for a user account using ADUC. After verifying user identity of course, reset the password and enforced a password change at next logon to maintain security best practices.
+
+![Image 3-18-26 at 6 49 AM](https://github.com/user-attachments/assets/f2c6dfde-699d-4334-aa1a-68cd7e11c0cb)
+
+
+
