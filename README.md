@@ -68,5 +68,21 @@ Simulated Password Reset:
 
 ![Image 3-18-26 at 6 49 AM](https://github.com/user-attachments/assets/f2c6dfde-699d-4334-aa1a-68cd7e11c0cb)
 
+Provisioned Client VM for Domain Join Testing:
+- Deployed an additional virtual machine in Microsoft Azure to simulate a client workstation. Configured the VM within the same virtual network and subnet as the domain controller to ensure proper network communication.
 
+![Image 3-18-26 at 5 52 PM](https://github.com/user-attachments/assets/d238d0b1-c7b0-48ab-bb93-8fabec6b7cb8)
+
+Configured Client VM to Use Domain Controller for DNS:
+- Updated DNS settings on the client virtual machine to point to the domain controller’s private IP address (10.0.0.4). In a cloud-based lab environment, this ensures the client can resolve domain services and successfully communicate with Active Directory.
+
+Attempted Domain Join & Identified DNS Resolution Issue:
+- Initiated domain join process on the client machine by configuring it to join "labtest.com". Encountered an error indicating the domain could not be resolved, highlighting a DNS-related issue.
+
+![Image 3-18-26 at 6 06 PM](https://github.com/user-attachments/assets/e158954b-d5d9-4aa4-838a-9583f038fc4c)
+
+Diagnosed DNS Misconfiguration Using ipconfig /all:
+- Used Command Prompt to run ipconfig /all on the client machine to verify network configuration. Identified that the DNS server was incorrectly set to an external address instead of the domain controller’s private IP. This misconfiguration prevented proper domain name resolution, explaining the failed domain join attempt and guiding the next troubleshooting step.
+
+![Image 3-18-26 at 6 09 PM](https://github.com/user-attachments/assets/865fa6d3-e7d8-43d5-b7c0-33a72aedf17e)
 
