@@ -96,3 +96,26 @@ Verified DNS Resolution and Connectivity to Domain Controller:
 
 ![Image 3-18-26 at 6 17 PM](https://github.com/user-attachments/assets/2a8f5be7-c689-4114-91df-91ccbd19317a)
 
+Simulated Local Account Management Without Domain Connectivity:
+- Simulated a scenario where a user is off-network and unable to reach the domain controller. Using elevated PowerShell access on the client machine, created a temporary local user account and added it to the local Administrators group to maintain system access. After validation, removed the account to restore the system to a secure state.
+
+![Image 3-18-26 at 6 30 PM](https://github.com/user-attachments/assets/58df921a-5e56-4e25-a860-5cd47abd1a0f)
+
+Restored Deleted Object Using Active Directory Recycle Bin:
+Enabled the Active Directory Recycle Bin and used the Active Directory Administrative Center (ADAC) to restore a previously deleted computer object (LAB-PC). This process preserved object attributes and re-established its relationship within the domain, demonstrating recovery capabilities and best practices for accidental deletion scenarios.
+
+![Image 3-18-26 at 6 41 PM](https://github.com/user-attachments/assets/7f4c0400-21f1-4a5b-9ee6-3c358a26ca2d)
+
+Created and Targeted Firewall GPO for Specific Client Testing:
+- Configured a Group Policy Object to disable the domain firewall using Group Policy Management. Scoped the policy by removing Authenticated Users and applying security filtering to a specific client machine to isolate testing. Linked the GPO at the Branch 1 OU level, ensuring the policy applied only to systems within that organizational unit. This demonstrates precise policy targeting and controlled deployment in an Active Directory environment.
+
+![Image 3-18-26 at 7 01 PM](https://github.com/user-attachments/assets/ff6ddc6a-3e3f-4795-ac21-fe5fdfc1577a)
+
+Validated GPO Application and Firewall Configuration:
+Ran gpupdate /force on the client machine to force a policy refresh and ensure it checked in with the domain controller to receive the latest Group Policy updates. Then used gpresult /r /scope:computer to verify that the “Disable Domain Firewall” GPO was successfully applied. Confirmed in Windows Security that the domain firewall was turned off, validating proper policy deployment, scoping, and functionality.
+
+![Image 3-18-26 at 7 12 PM](https://github.com/user-attachments/assets/7e909355-da89-4aaf-9ee3-77718b2aec53)
+
+
+
+
