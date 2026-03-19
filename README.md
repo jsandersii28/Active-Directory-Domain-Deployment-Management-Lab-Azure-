@@ -86,3 +86,13 @@ Diagnosed DNS Misconfiguration Using ipconfig /all:
 
 ![Image 3-18-26 at 6 09 PM](https://github.com/user-attachments/assets/865fa6d3-e7d8-43d5-b7c0-33a72aedf17e)
 
+Corrected DNS Configuration on Client Machine:
+- Manually updated the client machine’s network settings to use the domain controller’s private IP address (10.0.0.4) as its preferred DNS server. This change ensures proper domain name resolution and enables communication with Active Directory services.
+
+![Image 3-18-26 at 6 11 PM](https://github.com/user-attachments/assets/b78331a0-e9ad-4e8f-99f8-afa9647766f8)
+
+Verified DNS Resolution and Connectivity to Domain Controller:
+- Used Command Prompt to ping the domain controller to confirm successful DNS resolution and network connectivity. The successful replies verified that the client machine could properly resolve and communicate with the domain controller after correcting DNS settings, confirming readiness for domain join operations.
+
+![Image 3-18-26 at 6 17 PM](https://github.com/user-attachments/assets/2a8f5be7-c689-4114-91df-91ccbd19317a)
+
