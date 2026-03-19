@@ -1,4 +1,4 @@
-# Active Directory Lab: Domain Controller Setup, User & Group Management, and GPO Configuration
+# Azure Cloud & Identity Management: Active Directory Fundamentals Lab
 
 ## Objective
 
