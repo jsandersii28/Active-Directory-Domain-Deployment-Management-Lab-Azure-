@@ -18,12 +18,12 @@ The objective of this Active Directory lab was to build and manage a fully funct
 
 ### Tools Used
 
-Microsoft Azure (Virtual Machine deployment and management)
-Windows Server (Active Directory Domain Services)
-Active Directory Users and Computers (ADUC)
-Group Policy Management Console (GPMC)
-Windows 11 Client Machine
-Azure Virtual Network (VNet) & Networking Configuration
+- Microsoft Azure (Virtual Machine deployment and management)
+- Windows Server (Active Directory Domain Services)
+- Active Directory Users and Computers (ADUC)
+- Group Policy Management Console (GPMC)
+- Windows 11 Client Machine
+- Azure Virtual Network (VNet) & Networking Configuration
 
 ## Steps
 drag & drop screenshots here or use imgur and reference them using imgsrc
